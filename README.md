@@ -1,2 +1,2 @@
 # school_test
-Repo to make the school happy... lol
+Repo to make school stuff... lol
