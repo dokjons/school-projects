@@ -1,0 +1,85 @@
+section.half-section{
+    height: 350px;
+    background-color: #4A4A4A;
+    position: relative;
+    justify-content: space-between;
+    @media screen and (min-width: 709px) and (max-width: 852px){
+        height: 420px;
+    }
+    @media screen and (min-width: 574px) and (max-width: 708px){
+        height: 480px;
+    }
+    @media screen and (min-width: 540px) and (max-width: 573px){
+        height: 500px;
+    }
+    @media screen and (min-width: 503px) and (max-width: 539px){
+        height: 420px;
+    }
+    @media screen and (min-width: 425px) and (max-width: 502px){
+        height: 420px;
+    }
+    @media screen and (max-width: 424px){
+        height: 700px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25px;
+        width: 0;
+        height: 0;
+        border-bottom: 25px solid #4A4A4A;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        text-align: left;
+        padding: 0 12px;
+
+        @media screen and (min-width: 425px) and (max-width: 852px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 424px){
+            grid-template-columns: 1fr;
+        }
+        @media screen and (max-width: 341px){
+            gap: 30px;
+        }
+        li{
+            display: flex;
+            color: white;
+            align-items: center;
+            gap: 20px;
+            font-size: 1.4rem;
+            max-width: 320px;
+            width: 100%;
+            justify-content: space-between;
+            @media screen and (min-width: 425px) and (max-width: 539px){
+                font-size: 1rem;
+            }
+            img{
+                width: 120px;
+                max-height: 71.64px;
+                @media screen and (min-width: 425px) and (max-width: 539px){
+                    width: 85px;
+                }
+            }
+        }
+    }
+}
+.half-section:nth-of-type(4){
+    height: 200px !important;
+    @media screen and (max-width: 424px){
+        height: 430px !important;
+    }
+    @media screen and (min-width: 425px) and (max-width: 539px){
+        height: 300px !important;
+    }
+    @media screen and (min-width: 540px) and (max-width: 852px){
+        height: 340px !important;
+    }
+}

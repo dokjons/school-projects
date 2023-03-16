@@ -1,0 +1,94 @@
+.split{
+    position: relative;
+    @media screen and (max-width: 1009px){
+        height: 100%;
+    }
+    img:first-child{
+        display: none;
+        @media screen and (max-width: 1009px){
+            display: block;
+        }
+    } 
+    .crewslogan{
+        display: block;
+        z-index: 1;
+        bottom: 170px;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        filter: drop-shadow(2px 1px 0px black);
+        width: 90%;
+        @media screen and (max-width: 1009px){
+            display: none;
+        }
+    }
+    .split-btn-con{
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(to left, #5A7CF7, #C14BFA 50%);
+        border: 3px solid white;
+        border-radius: 45px;
+        display: inline-flex;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        @media screen and (max-width: 1009px){
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            margin: 0;
+            padding: 8px 30px;
+            font-size: 1.5rem;
+            transition: all 0.2s ease-in-out;
+            flex: 1;
+            text-align: center;
+            height: 58px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            &:first-child{
+                border-top-left-radius: 40px;
+                border-bottom-left-radius: 40px;
+            }
+            &:last-child{
+                border-top-right-radius: 40px;
+                border-bottom-right-radius: 40px;
+            }
+            &:hover{
+                box-shadow: inset 1px 1px 5px 0px #000000, inset 5px 5px 13px 5px rgb(0 0 0 / 0%);
+            }
+        }
+    }
+    #section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        @media screen and (max-width: 1009px){
+            display: none;
+        }
+        #designer-img, #coder-img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            max-height: 800px;
+            width: 50%;
+            background-size: 80% 800px !important;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #designer-img{
+            left: 0;
+            background: url('../images/scroll-design.webp') no-repeat center center fixed;      
+        }
+        #coder-img{
+            right: 0;
+            background: url('../images/scroll-normal.webp') no-repeat center center fixed;      
+        }
+    }
+}
